@@ -1,0 +1,205 @@
+body {
+    background: #dadada
+}
+
+* {
+    margin: 0;
+    paddinbody {
+        background: black;
+        font-family:  Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav {
+        position: fixed;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .container {
+        width: 100%;
+        padding-top: calc(70px + 30px);
+        margin: 0;
+    }
+    
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: transparent;
+        padding: 15px 0;
+        height: 70px;
+    }
+    
+    .menu {
+        background-color: green;
+        padding: 0px;
+        display: inline-block;
+        border-top: 2px solid gray;
+        border-left: 2px solid gray;
+        box-shadow: 5px 5px 12px gray;
+        background: greenyellow;
+        border-radius: 40px;
+    }
+    
+    .menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .menu > ul > li {
+        position: relative;
+        display: inline-block;
+        margin: 0;
+    }
+    
+    .menu a {
+        color: rgb(26, 22, 29);
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 40px;
+        margin: 5px; 
+        transition: background-color 0.3s, color 0.3s;
+        white-space: nowrap;
+    }
+    
+    .menu a:hover {
+        background-color: lightsteelblue;
+        color: white;
+    }
+    
+    
+    .menu ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: black; 
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        min-width: 200px;
+        border-top: 5px solid gray;
+        border-left: 5px solid gray;
+        box-shadow: 10px 10px 10px #00000035;
+        padding: 10px 0;
+        flex-direction: column;
+    }
+    
+    
+    .menu ul ul li {
+        width: 100%;
+    }
+    
+    .menu ul ul a {
+        padding: 10px 20px;
+        border-radius: 40px;
+    }
+    
+    .menu li:hover > ul {
+        display: block;
+    }
+    
+    .mainPage {
+        width: 50%;
+        padding: 50px;
+        border-top: 2px solid #FFFFFF75;
+        border-left: 2px solid #FFFFFF75;
+        box-shadow: 5px 5px 12px #00000035;
+        background: lightseagreen;
+        border-radius: 150px;
+        margin: 0 auto;
+        display: flex;
+        gap: 0px;
+        align-items: flex-start;
+    }
+    
+    .image-container {
+        width: min-content;
+        margin: 0px 20px 0px 0px;
+        border-top: 2px solid gray;
+        border-left: 2px solid gray;
+        box-shadow: 1px 1px 150px lightgreen;
+        background: #40637d25;
+        border-radius: 15px;
+        padding: 0px;
+        display: inline;
+    }
+    
+    .image-container img {
+        display: block; 
+        width: 250px; 
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+    }
+    
+    .image-container:hover img {
+        transform: scale(1.05);
+    }
+    
+    .about-title {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .about-content {
+        font-size: 20px;
+        font-weight: normal;
+        margin-bottom: 20px;
+    }g: 0
+}
+
+#menu {
+    margin: 20px;
+}
+
+#menu ul ul {
+    display: none;
+}
+
+#menu li {
+    float: left;
+    list-style-type: none;
+}
+
+#menu > div {
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+#menu li a {
+    display: block;
+    background: white;
+    color: #fff;
+    text-decoration: none;
+    padding: 30px;
+}
+
+#menu li a:hover {
+    display: block;
+    background: white;
+    color: orange;
+    box-shadow: inset 0 -5px 0 0 orange;
+}
+
+#menu ul li:hover>ul {
+    display: block;
+}
+
+#menu ul {
+    position: relative
+}
+
+#menu li {
+    font-family: Arial;
+    text-align: center;
+    width: 140px
+}
